@@ -1,5 +1,10 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
 h1 {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 2.5em;
 }
 
 .display {
@@ -10,6 +15,11 @@ h1 {
   margin: 1rem;
 }
 
+.recent-score {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
 .refresh {
   color: black;
 }
@@ -17,4 +27,17 @@ h1 {
 .add-score {
   display: flex;
   flex-direction: column;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid;
+  outline: none;
+  padding-left: 10px;
+  font-size: 1em;
+  z-index: 999;
+  visibility: visible;
+  margin: 1rem 0%;
 }
