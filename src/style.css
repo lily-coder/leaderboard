@@ -2,4 +2,19 @@ h1 {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
 
+.display {
+  display: flex;
+}
 
+.list {
+  margin: 1rem;
+}
+
+.refresh {
+  color: black;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+}
