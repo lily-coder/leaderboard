@@ -52,6 +52,7 @@ p {
   padding: 0% 1rem;
   font-size: 1.2em;
   box-shadow: 1px 4px black;
+  cursor: pointer;
 }
 
 .recent-score,
@@ -90,4 +91,5 @@ input[type=text] {
   box-shadow: 1px 4px black;
   justify-content: center;
   margin: 1rem 0%;
+  cursor: pointer;
 }
