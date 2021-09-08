@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
     <h1>Leaderboard</h1>
@@ -11,7 +11,7 @@
         <div class="list">
             <div class="recent">
                 <p class="recent-score">Recent scores</p>
-                <p class="refresh">Refresh</p>
+                <button class="refresh" type="button">Refresh</button>
             </div>
             <div class="list-names">
                 <p class="names">Name: 100</p>
@@ -22,7 +22,7 @@
                 <p class="names">Name: 100</p>
             </div>
         </div>
-        <div class="add-score">
+        <form class="add-score">
             <p class="add-header">Add your score</p>
             <input 
                 type="text" 
@@ -34,8 +34,8 @@
                 placeholder="Your score"
                 id="input-score"
                 required/>
-            <p class="submit">Submit</p>
-        </div>
+            <button class="submit" type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>
