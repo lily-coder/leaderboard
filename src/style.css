@@ -25,9 +25,8 @@ p {
 .recent {
   display: flex;
   justify-content: space-between;
-  margin: 1rem ;
+  margin: 1rem;
 }
-
 
 .list-names {
   border: 3px solid;
