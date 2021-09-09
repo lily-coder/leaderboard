@@ -6,6 +6,8 @@
 ## Live Demo
 [Live Demo](https://lily-coder.github.io/leaderboard/)
 
+## Screenshot
+![screenshot](./src/leaderboard.PNG)
 ## Built With
 
 - Html5 and Css3
