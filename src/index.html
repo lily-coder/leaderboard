@@ -13,29 +13,26 @@
                 <p class="recent-score">Recent scores</p>
                 <button class="refresh" type="button">Refresh</button>
             </div>
-            <div class="list-names">
-                <p class="names">Name: 100</p>
-                <p class="names">Name: 100</p>
-                <p class="names">Name: 100</p>
-                <p class="names">Name: 100</p>
-                <p class="names">Name: 100</p>
-                <p class="names">Name: 100</p>
-            </div>
+            <div class="list-names"></div>
         </div>
-        <form class="add-score">
+        <div class="add-scores">
             <p class="add-header">Add your score</p>
-            <input 
-                type="text" 
-                placeholder="Your name"
-                id="input-name"
-                required/>
-            <input 
-                type="text" 
-                placeholder="Your score"
-                id="input-score"
-                required/>
-            <button class="submit" type="submit">Submit</button>
-        </form>
+            <form class="add-score add-scores">
+                <input 
+                    type="text" 
+                    placeholder="Your name"
+                    id="input-name"
+                    type="text"
+                    required/>
+                <input 
+                    type="text" 
+                    placeholder="Your score"
+                    id="input-score"
+                    type="number"
+                    required/>
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
