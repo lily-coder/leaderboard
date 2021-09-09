@@ -6,6 +6,7 @@ import * as api from './api.js';
 const displayScores = (scores = []) => {
   const list = document.querySelector('.list-names');
   list.innerHTML = '';
+  scores.sort((a, b) => b.score - a.score);
   scores.forEach(({ user, score }) => {
     const p = document.createElement('p');
     p.classList.add('names');
