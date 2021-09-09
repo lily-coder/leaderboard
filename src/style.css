@@ -1,9 +1,10 @@
 body {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  background-color: #0d2633e1;
+  color: white;
 }
 
 h1 {
-  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   font-size: 2.5em;
 }
 
@@ -13,13 +14,15 @@ p {
 
 .display {
   display: flex;
+  flex-direction: column;
   width: 80%;
   justify-content: center;
 }
 
 .list {
   margin: 0% 2rem;
-  width: 50%;
+  margin-bottom: 5rem;
+  width: 100%;
 }
 
 .recent {
@@ -43,27 +46,31 @@ p {
   padding: 0% 1rem;
 }
 
+.names:nth-child(odd) {
+  color: white;
+  background-color: #3594c78f;
+}
+
 .names:nth-child(even) {
-  background-color: rgba(104, 103, 103, 0.322);
+  color: white;
+  background-color: #0d263300;
 }
 
 .refresh {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   border: 2px solid;
   padding: 0% 1rem;
   font-size: 1.2em;
   box-shadow: 1px 4px black;
   cursor: pointer;
   margin: 0%;
+  width: 100px;
+  height: 40px;
 }
 
 .refresh:hover {
-  border: 2px solid;
-  padding: 0% 1rem;
   padding-top: 0.1rem;
-  font-size: 1.2em;
   box-shadow: 2px 5px black;
-  cursor: pointer;
-  margin: 0%;
   margin-top: 0.1rem;
 }
 
@@ -76,15 +83,22 @@ p {
 .add-scores {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin: auto;
+  align-items: center;
+  margin: 0%;
+  width: 80%;
+  justify-content: center;
+}
+
+::placeholder {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  color: white;
 }
 
 input[type=text] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 2px solid;
+  border: 2px solid white;
   outline: none;
   padding-left: 10px;
   font-size: 1em;
@@ -93,9 +107,11 @@ input[type=text] {
   margin: 1rem 0%;
   height: 40px;
   width: 100%;
+  background-color: #3594c78f;
 }
 
 .submit {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
   border: 2px solid;
   padding: 0% 1rem;
   font-size: 1.2em;
@@ -107,12 +123,25 @@ input[type=text] {
 }
 
 .submit:hover {
-  border: 2px solid;
-  padding: 0% 1rem;
-  font-size: 1.2em;
   box-shadow: 2px 5px black;
-  justify-content: center;
   margin: 1.1rem 0%;
-  height: 40px;
-  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .display {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .list {
+    width: 50%;
+    margin-bottom: 0%;
+  }
+
+  .add-scores {
+    width: 50%;
+    align-items: flex-end;
+  }
 }
